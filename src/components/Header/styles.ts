@@ -19,5 +19,9 @@ export const ImageBox = chakra(Flex, {
 })
 
 export const HeaderText = chakra(Text, {
-  baseStyle: {},
+  baseStyle: {
+    fontSize: [12, 14, 14],
+    marginTop: -0.5,
+    color: 'text.200',
+  },
 })

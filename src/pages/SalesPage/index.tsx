@@ -1,5 +1,8 @@
 import { useEffect, useState } from 'react'
+import { useMediaQuery } from '@chakra-ui/react'
+
 import { BayButtonBox } from '~/components/BayButtonBox'
+import { Footer } from '~/components/Footer'
 import { Header } from '~/components/Header'
 import { Video, VideoProps } from '~/components/Video'
 
@@ -8,7 +11,6 @@ import testimoniesP1 from '~/assets/images/testimonies-mobile-p1.png'
 import testimoniesP2 from '~/assets/images/testimonies-mobile-p2.png'
 
 import * as S from './styles'
-import { useMediaQuery } from '@chakra-ui/react'
 
 export type SalesPageProps = VideoProps & {
   paymentMethodsImg: string
@@ -50,6 +52,8 @@ export const SalesPage = () => {
 
         {showBayButton && <BayButtonBox />}
       </S.Content>
+
+      <Footer />
     </S.Container>
   )
 }

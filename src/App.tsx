@@ -1,13 +1,14 @@
-import { ChakraProvider } from '@chakra-ui/react'
+import { ChakraProvider, ColorModeScript } from '@chakra-ui/react'
 
-import { SalesPage } from './pages/SalesPage'
+import { AppRoutes } from './routes'
 
 import theme from '../src/styles/theme'
 
 export const App = () => {
   return (
     <ChakraProvider theme={theme}>
-      <SalesPage />
+      <AppRoutes />
+      <ColorModeScript initialColorMode={theme.config.initialColorMode} />
     </ChakraProvider>
   )
 }

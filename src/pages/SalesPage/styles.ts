@@ -14,18 +14,3 @@ export const Content = chakra(Box, {
     marginX: 'auto',
   },
 })
-
-export const TitleBox = chakra(Box, {
-  baseStyle: {
-    marginTop: 8,
-  },
-})
-
-export const TestimoniesBox = chakra(Box, {
-  baseStyle: {
-    marginTop: 8,
-    marginX: 'auto',
-    borderRadius: 10,
-    overflow: 'hidden',
-  },
-})

@@ -40,3 +40,9 @@ export const Copyright = chakra(Text, {
     color: 'text.200',
   },
 })
+
+export const Bar = chakra(Text, {
+  baseStyle: {
+    color: 'text.200',
+  },
+})

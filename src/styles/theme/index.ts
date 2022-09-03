@@ -12,6 +12,7 @@ const customTheme = {
       900: '#121212',
     },
     text: {
+      100: '#DCDCDC',
       200: '#C3C3C3',
     },
     green: {

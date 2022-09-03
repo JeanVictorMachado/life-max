@@ -6,6 +6,7 @@ import { Footer } from '~/components/Footer'
 import { Header } from '~/components/Header'
 import { Video, VideoProps } from '~/components/Video'
 
+import titleMobile from '~/assets/images/title-mobile.png'
 import testimonies from '~/assets/images/testimonies.png'
 import testimoniesP1 from '~/assets/images/testimonies-mobile-p1.png'
 import testimoniesP2 from '~/assets/images/testimonies-mobile-p2.png'
@@ -35,6 +36,10 @@ export const SalesPage = () => {
       <Header />
 
       <S.Content>
+        <S.TitleBox>
+          <img src={titleMobile} alt="" />
+        </S.TitleBox>
+
         <Video vslSrc="https://player.vimeo.com/video/675866377?color&amp;autopause=0&amp;loop=0&amp;muted=0&amp;title=0&amp;portrait=0&amp;byline=0&amp;h=7d6f99eb19#t=" />
 
         {showBayButton && <BayButtonBox />}

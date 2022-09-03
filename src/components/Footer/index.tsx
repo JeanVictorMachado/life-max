@@ -19,7 +19,9 @@ export const Footer = () => {
         <S.LinkContent>
           <Link to="/politica-de-privacidade">Política de privacidade</Link>
         </S.LinkContent>
-        {'|'}
+
+        <S.Bar>|</S.Bar>
+
         <S.LinkContent>
           <Link to="/termos-de-uso">Termos de uso</Link>
         </S.LinkContent>

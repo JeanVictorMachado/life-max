@@ -46,7 +46,7 @@ export const Divider = chakra(Text, {
 
 export const MoreButtonBox = chakra(Flex, {
   baseStyle: {
-    width: '190px',
+    width: '205px',
     margin: 'auto',
     marginTop: 8,
     marginBottom: 8,

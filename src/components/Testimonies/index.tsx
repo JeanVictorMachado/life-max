@@ -27,7 +27,7 @@ export const Testimonies = () => {
   ])
 
   useEffect(() => {
-    if (isLargerThanHD && !isDisplayingInBrowser) {
+    if (window.screen.width < 900) {
       setMoreTestimoniesMobile([
         {
           testimonies: testimoniesP1,
@@ -49,7 +49,7 @@ export const Testimonies = () => {
     setIsfetching(true)
 
     setTimeout(() => {
-      if (isLargerThanHD && !isDisplayingInBrowser) {
+      if (!!isLargerThanHD && !isDisplayingInBrowser) {
         quantity === 1 &&
           setMoreTestimoniesMobile([
             ...moreTestimoniesMobile,
@@ -165,8 +165,6 @@ export const Testimonies = () => {
             {isFetching ? <Spinner size="sm" /> : <ImArrowDown size={18} color="#C3C3C3" />}
           </S.MoreButtonBox>
         )}
-
-        <S.Divider />
       </S.MoreButtonContainer>
     </S.Container>
   )

@@ -26,7 +26,7 @@ export const SalesPage = () => {
   useEffect(() => {
     setTimeout(() => {
       setShowBayButton(true)
-    }, 100000)
+    }, 8000)
   }, [])
 
   return (
@@ -34,21 +34,13 @@ export const SalesPage = () => {
       <Header />
 
       <S.Content>
-        {/* <Text marginTop={6} fontSize={36} fontWeight={600} textAlign={'center'}>
-          "O segredo dos famosos foi revelado"
-        </Text>
-
-        <Text paddingX={20} marginTop={6} fontSize={36.5} fontWeight={600} textAlign={'center'}>
-          É por isso que eles emagrecem tanto em tão pouco tempo
-        </Text> */}
-
         <TitlePage />
 
         <Video vslSrc="https://player.vimeo.com/video/675866377?color&amp;autopause=0&amp;loop=0&amp;muted=0&amp;title=0&amp;portrait=0&amp;byline=0&amp;h=7d6f99eb19#t=" />
 
         {showBayButton && <BayButtonBox />}
 
-        <SliderComponent sliderParams={beforeAndAfter} />
+        {showBayButton && <SliderComponent sliderParams={beforeAndAfter} />}
 
         <Testimonies />
 

@@ -1,72 +1,72 @@
 [
   {
-    "img": "./src/assets/images/beforeAndAfter/before-and-after-1.webp",
-    "name": "Solange Alvez",
-    "age": "38",
-    "lostWeight": "-8Kg em 14 dias",
-    "description": "Imagem pessoa antes e depois"
+    "img": "images/before-and-after-1.webp",
+    "name": "Priscila Antunes",
+    "age": "36",
+    "lostWeight": "-14Kg em 30 dias",
+    "description": ""
   },
   {
-    "img": "./src/assets/images/beforeAndAfter/before-and-after-2.jpg",
-    "name": "Solange Alvez",
-    "age": "38",
-    "lostWeight": "-10Kg em 21 dias",
-    "description": "Imagem pessoa antes e depois"
+    "img": "images/before-and-after-2.jpg",
+    "name": "Sabrina Geovanelli",
+    "age": "26",
+    "lostWeight": "-25Kg em 3 meses",
+    "description": ""
   },
   {
-    "img": "./src/assets/images/beforeAndAfter/before-and-after-3.jpg",
-    "name": "Solange Alvez",
-    "age": "38",
-    "lostWeight": "-14Kg em 14 dias",
-    "description": "Imagem pessoa antes e depois"
+    "img": "images/before-and-after-3.jpg",
+    "name": "Cintia Almeida da Costa",
+    "age": "24",
+    "lostWeight": "-42Kg em 5 meses",
+    "description": ""
   },
   {
-    "img": "./src/assets/images/beforeAndAfter/before-and-after-4.jpg",
-    "name": "Solange Alvez",
-    "age": "38",
-    "lostWeight": "-14Kg em 14 dias",
-    "description": "Imagem pessoa antes e depois"
+    "img": "images/before-and-after-4.jpg",
+    "name": "Isabel Siqueira",
+    "age": "43",
+    "lostWeight": "-22Kg em 2 meses e meio",
+    "description": ""
   },
   {
-    "img": "./src/assets/images/beforeAndAfter/before-and-after-5.png",
-    "name": "Solange Alvez",
-    "age": "38",
-    "lostWeight": "-14Kg em 14 dias",
-    "description": "Imagem pessoa antes e depois"
+    "img": "images/before-and-after-5.png",
+    "name": "Roberto Ap. Vieira",
+    "age": "64",
+    "lostWeight": "-17Kg em 1 mês e meio",
+    "description": ""
   },
   {
-    "img": "./src/assets/images/beforeAndAfter/before-and-after-6.png",
-    "name": "Solange Alvez",
-    "age": "38",
-    "lostWeight": "-14Kg em 14 dias",
-    "description": "Imagem pessoa antes e depois"
+    "img": "images/before-and-after-6.png",
+    "name": "Gilmar Ferreira",
+    "age": "39",
+    "lostWeight": "-23Kg em 3 meses",
+    "description": ""
   },
   {
-    "img": "./src/assets/images/beforeAndAfter/before-and-after-7.jpg",
-    "name": "Solange Alvez",
-    "age": "38",
-    "lostWeight": "-14Kg em 14 dias",
-    "description": "Imagem pessoa antes e depois"
+    "img": "images/before-and-after-7.jpg",
+    "name": "Rubens Batista Aguiar",
+    "age": "41",
+    "lostWeight": "-19Kg em 2 meses",
+    "description": ""
   },
   {
-    "img": "./src/assets/images/beforeAndAfter/before-and-after-8.jpg",
-    "name": "Solange Alvez",
-    "age": "38",
-    "lostWeight": "-14Kg em 14 dias",
-    "description": "Imagem pessoa antes e depois"
+    "img": "images/before-and-after-8.jpg",
+    "name": "Edna Fontini",
+    "age": "53",
+    "lostWeight": "-16Kg em 30 dias",
+    "description": ""
   },
   {
-    "img": "./src/assets/images/beforeAndAfter/before-and-after-9.jpg",
-    "name": "Solange Alvez",
-    "age": "38",
-    "lostWeight": "-14Kg em 14 dias",
-    "description": "Imagem pessoa antes e depois"
+    "img": "images/before-and-after-9.jpg",
+    "name": "Antônio Carlos Morais",
+    "age": "45",
+    "lostWeight": "-28Kg em 3 meses",
+    "description": ""
   },
   {
-    "img": "./src/assets/images/beforeAndAfter/before-and-after-10.jpg",
-    "name": "Solange Alvez",
+    "img": "images/before-and-after-10.jpg",
+    "name": "Marcelo Custodio",
     "age": "38",
-    "lostWeight": "-14Kg em 14 dias",
-    "description": "Imagem pessoa antes e depois"
+    "lostWeight": "-14Kg em 30 dias",
+    "description": ""
   }
 ]

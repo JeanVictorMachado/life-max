@@ -55,6 +55,7 @@ export const MoreButtonBox = chakra(Flex, {
     paddingX: 4,
     paddingY: 3,
     borderRadius: 10,
+    color: 'text.100',
     background: 'background.800',
     border: '1px solid',
     borderColor: 'background.700',

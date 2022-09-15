@@ -1,0 +1,72 @@
+[
+  {
+    "img": "./src/assets/images/beforeAndAfter/before-and-after-1.webp",
+    "name": "Solange Alvez",
+    "age": "38",
+    "lostWeight": "-8Kg em 14 dias",
+    "description": "Imagem pessoa antes e depois"
+  },
+  {
+    "img": "./src/assets/images/beforeAndAfter/before-and-after-2.jpg",
+    "name": "Solange Alvez",
+    "age": "38",
+    "lostWeight": "-10Kg em 21 dias",
+    "description": "Imagem pessoa antes e depois"
+  },
+  {
+    "img": "./src/assets/images/beforeAndAfter/before-and-after-3.jpg",
+    "name": "Solange Alvez",
+    "age": "38",
+    "lostWeight": "-14Kg em 14 dias",
+    "description": "Imagem pessoa antes e depois"
+  },
+  {
+    "img": "./src/assets/images/beforeAndAfter/before-and-after-4.jpg",
+    "name": "Solange Alvez",
+    "age": "38",
+    "lostWeight": "-14Kg em 14 dias",
+    "description": "Imagem pessoa antes e depois"
+  },
+  {
+    "img": "./src/assets/images/beforeAndAfter/before-and-after-5.png",
+    "name": "Solange Alvez",
+    "age": "38",
+    "lostWeight": "-14Kg em 14 dias",
+    "description": "Imagem pessoa antes e depois"
+  },
+  {
+    "img": "./src/assets/images/beforeAndAfter/before-and-after-6.png",
+    "name": "Solange Alvez",
+    "age": "38",
+    "lostWeight": "-14Kg em 14 dias",
+    "description": "Imagem pessoa antes e depois"
+  },
+  {
+    "img": "./src/assets/images/beforeAndAfter/before-and-after-7.jpg",
+    "name": "Solange Alvez",
+    "age": "38",
+    "lostWeight": "-14Kg em 14 dias",
+    "description": "Imagem pessoa antes e depois"
+  },
+  {
+    "img": "./src/assets/images/beforeAndAfter/before-and-after-8.jpg",
+    "name": "Solange Alvez",
+    "age": "38",
+    "lostWeight": "-14Kg em 14 dias",
+    "description": "Imagem pessoa antes e depois"
+  },
+  {
+    "img": "./src/assets/images/beforeAndAfter/before-and-after-9.jpg",
+    "name": "Solange Alvez",
+    "age": "38",
+    "lostWeight": "-14Kg em 14 dias",
+    "description": "Imagem pessoa antes e depois"
+  },
+  {
+    "img": "./src/assets/images/beforeAndAfter/before-and-after-10.jpg",
+    "name": "Solange Alvez",
+    "age": "38",
+    "lostWeight": "-14Kg em 14 dias",
+    "description": "Imagem pessoa antes e depois"
+  }
+]

@@ -188,7 +188,11 @@ export const Testimonies = () => {
             >
               <S.MoreText>Fechar comentários</S.MoreText>
 
-              {isFetching ? <Spinner size="sm" /> : <ImArrowUp size={18} color="#C3C3C3" />}
+              {isFetching ? (
+                <Spinner size="sm" color="#C3C3C3" />
+              ) : (
+                <ImArrowUp size={18} color="#C3C3C3" />
+              )}
             </S.MoreButtonBox>
           ) : (
             <S.MoreButtonBox
@@ -199,7 +203,11 @@ export const Testimonies = () => {
             >
               <S.MoreText>Mais comentários</S.MoreText>
 
-              {isFetching ? <Spinner size="sm" /> : <ImArrowDown size={18} color="#C3C3C3" />}
+              {isFetching ? (
+                <Spinner size="sm" color="#C3C3C3" />
+              ) : (
+                <ImArrowDown size={18} color="#C3C3C3" />
+              )}
             </S.MoreButtonBox>
           )
         ) : (
@@ -211,7 +219,11 @@ export const Testimonies = () => {
           >
             <S.MoreText>Ver comentários</S.MoreText>
 
-            {isFetching ? <Spinner size="sm" /> : <ImArrowDown size={18} color="#C3C3C3" />}
+            {isFetching ? (
+              <Spinner size="sm" color="#C3C3C3" />
+            ) : (
+              <ImArrowDown size={18} color="#C3C3C3" />
+            )}
           </S.MoreButtonBox>
         )}
       </S.MoreButtonContainer>

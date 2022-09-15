@@ -1,9 +1,22 @@
 import { useEffect, useState } from 'react'
-import { useMediaQuery, Spinner } from '@chakra-ui/react'
+import { Spinner } from '@chakra-ui/react'
 
-import testimonies from '~/assets/images/testimonies.png'
-import testimoniesP1 from '~/assets/images/testimonies-mobile-p1.png'
-import testimoniesP2 from '~/assets/images/testimonies-mobile-p2.png'
+import testimonies from '~/assets/images/dep-desktop-1.png'
+import testimonies2 from '~/assets/images/dep-desktop-2.png'
+import testimonies3 from '~/assets/images/dep-desktop-3.png'
+import testimonies4 from '~/assets/images/dep-desktop-4.png'
+import testimonies5 from '~/assets/images/dep-desktop-5.png'
+
+import testimoniesM1 from '~/assets/images/dep-mobile-1.png'
+import testimoniesM2 from '~/assets/images/dep-mobile-2.png'
+import testimoniesM3 from '~/assets/images/dep-mobile-3.png'
+import testimoniesM4 from '~/assets/images/dep-mobile-4.png'
+import testimoniesM5 from '~/assets/images/dep-mobile-5.png'
+import testimoniesM6 from '~/assets/images/dep-mobile-6.png'
+import testimoniesM7 from '~/assets/images/dep-mobile-7.png'
+import testimoniesM8 from '~/assets/images/dep-mobile-8.png'
+import testimoniesM9 from '~/assets/images/dep-mobile-9.png'
+import testimoniesM10 from '~/assets/images/dep-mobile-10.png'
 
 import { ImArrowDown, ImArrowUp } from 'react-icons/im'
 
@@ -11,29 +24,27 @@ import * as S from './styles'
 
 export const Testimonies = () => {
   const [isFetching, setIsfetching] = useState(false)
+  const [sizeScreen, setSizeScreen] = useState(0)
   const [moreTestimoniesQuantity, setMoreTestimoniesQuantity] = useState(1)
   const [moreTestimoniesMobile, setMoreTestimoniesMobile] = useState([
     {
-      testimonies: testimoniesP1,
+      testimonies: testimoniesM1,
     },
     {
-      testimonies: testimoniesP2,
+      testimonies: testimoniesM2,
     },
-  ])
-
-  const [isLargerThanHD, isDisplayingInBrowser] = useMediaQuery([
-    '(max-width: 700px)',
-    '(display-mode: browser)',
   ])
 
   useEffect(() => {
-    if (window.screen.width < 900) {
+    setSizeScreen(window.screen.width)
+
+    if (window.screen.width < 650) {
       setMoreTestimoniesMobile([
         {
-          testimonies: testimoniesP1,
+          testimonies: testimoniesM1,
         },
         {
-          testimonies: testimoniesP2,
+          testimonies: testimoniesM2,
         },
       ])
     } else {
@@ -49,15 +60,15 @@ export const Testimonies = () => {
     setIsfetching(true)
 
     setTimeout(() => {
-      if (!!isLargerThanHD && !isDisplayingInBrowser) {
+      if (sizeScreen < 650) {
         quantity === 1 &&
           setMoreTestimoniesMobile([
             ...moreTestimoniesMobile,
             {
-              testimonies: testimoniesP1,
+              testimonies: testimoniesM1,
             },
             {
-              testimonies: testimoniesP2,
+              testimonies: testimoniesM2,
             },
           ])
 
@@ -65,10 +76,10 @@ export const Testimonies = () => {
           setMoreTestimoniesMobile([
             ...moreTestimoniesMobile,
             {
-              testimonies: testimoniesP1,
+              testimonies: testimoniesM3,
             },
             {
-              testimonies: testimoniesP2,
+              testimonies: testimoniesM4,
             },
           ])
 
@@ -76,10 +87,32 @@ export const Testimonies = () => {
           setMoreTestimoniesMobile([
             ...moreTestimoniesMobile,
             {
-              testimonies: testimoniesP1,
+              testimonies: testimoniesM5,
             },
             {
-              testimonies: testimoniesP2,
+              testimonies: testimoniesM6,
+            },
+          ])
+
+        quantity === 4 &&
+          setMoreTestimoniesMobile([
+            ...moreTestimoniesMobile,
+            {
+              testimonies: testimoniesM7,
+            },
+            {
+              testimonies: testimoniesM8,
+            },
+          ])
+
+        quantity === 5 &&
+          setMoreTestimoniesMobile([
+            ...moreTestimoniesMobile,
+            {
+              testimonies: testimoniesM9,
+            },
+            {
+              testimonies: testimoniesM10,
             },
           ])
       } else {
@@ -95,7 +128,7 @@ export const Testimonies = () => {
           setMoreTestimoniesMobile([
             ...moreTestimoniesMobile,
             {
-              testimonies: testimonies,
+              testimonies: testimonies2,
             },
           ])
 
@@ -103,7 +136,23 @@ export const Testimonies = () => {
           setMoreTestimoniesMobile([
             ...moreTestimoniesMobile,
             {
-              testimonies: testimonies,
+              testimonies: testimonies3,
+            },
+          ])
+
+        quantity === 4 &&
+          setMoreTestimoniesMobile([
+            ...moreTestimoniesMobile,
+            {
+              testimonies: testimonies4,
+            },
+          ])
+
+        quantity === 5 &&
+          setMoreTestimoniesMobile([
+            ...moreTestimoniesMobile,
+            {
+              testimonies: testimonies5,
             },
           ])
       }
@@ -129,7 +178,7 @@ export const Testimonies = () => {
 
       <S.MoreButtonContainer>
         {moreTestimoniesMobile.length > 0 ? (
-          moreTestimoniesQuantity === 3 ? (
+          moreTestimoniesQuantity === 5 ? (
             <S.MoreButtonBox
               width={205}
               onClick={() => {

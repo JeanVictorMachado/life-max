@@ -33,7 +33,9 @@ export const TestimoniesBox = chakra(Box, {
 })
 
 export const MoreButtonContainer = chakra(Box, {
-  baseStyle: {},
+  baseStyle: {
+    marginTop: 9,
+  },
 })
 
 export const Divider = chakra(Text, {

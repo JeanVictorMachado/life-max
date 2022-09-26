@@ -2,9 +2,13 @@ import { Link } from 'react-router-dom'
 
 import * as S from './styles'
 
-export const Footer = () => {
+type FooterProps = {
+  marginTop?: number | string
+}
+
+export const Footer = ({ marginTop = 10 }: FooterProps) => {
   return (
-    <S.Container>
+    <S.Container marginTop={marginTop}>
       <S.FooterText>
         Este site não é afiliado ao Facebook ou a qualquer entidade do Facebook. Depois que você
         sair do Facebook, a responsabilidade não é deles e sim do nosso site. Fazemos todos os

@@ -8,6 +8,8 @@ const customTheme = {
   colors: {
     ...theme.colors,
     background: {
+      200: '#DCDCDC',
+      300: '#A8A8A8',
       700: '#464646',
       800: '#252525',
       900: '#121212',

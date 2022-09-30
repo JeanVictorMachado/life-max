@@ -1,16 +1,14 @@
 import * as S from './styles'
 
-export type VideoProps = {
-  vslSrc: string
-}
-
-export const Video = ({ vslSrc }: VideoProps) => {
+export const Video = () => {
   return (
     <S.Container>
       <iframe
-        src={vslSrc}
+        id="panda-6da7d9f0-c5b3-4565-ad2d-7afd54edf545"
+        src="https://player-vz-5115ab41-ebb.tv.pandavideo.com.br/embed/?v=6da7d9f0-c5b3-4565-ad2d-7afd54edf545"
         allowFullScreen
-        title="Player de Vídeo vimeo"
+        title="Max Life"
+        allow="accelerometer;gyroscope;autoplay;encrypted-media;picture-in-picture"
         style={{
           position: 'absolute',
           width: '100%',

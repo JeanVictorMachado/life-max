@@ -6,13 +6,13 @@ import { Header } from '~/components/Header'
 import { SliderComponent, SliderProps } from '~/components/Slider'
 import { Testimonies } from '~/components/Testimonies'
 import { TitlePage } from '~/components/TitlePage'
-import { Video, VideoProps } from '~/components/Video'
+import { Video } from '~/components/Video'
 
 import beforeAndAfterImages from '~/utils/beforeAndAfter/before-and-after.json'
 
 import * as S from './styles'
 
-export type SalesPageProps = VideoProps & {
+export type SalesPageProps = {
   paymentMethodsImg: string
 }
 
@@ -24,9 +24,12 @@ export const SalesPage = () => {
   }, [])
 
   useEffect(() => {
+    const oneMinute = 60000
+    const vslPith = 24
+
     setTimeout(() => {
       setShowBayButton(true)
-    }, 200000)
+    }, oneMinute * vslPith)
   }, [])
 
   return (
@@ -36,7 +39,7 @@ export const SalesPage = () => {
       <S.Content>
         <TitlePage />
 
-        <Video vslSrc="https://player.vimeo.com/video/675866377?color&amp;autopause=0&amp;loop=0&amp;muted=0&amp;title=0&amp;portrait=0&amp;byline=0&amp;h=7d6f99eb19#t=" />
+        <Video />
 
         {showBayButton && <BayButtonBox />}
 

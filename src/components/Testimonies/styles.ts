@@ -1,7 +1,7 @@
 import { Box, chakra, Flex, Text } from '@chakra-ui/react'
 
 export const Container = chakra(Box, {
-  baseStyle: {},
+  baseStyle: { paddingX: [4, 4, 0] },
 })
 
 export const TitleBox = chakra(Flex, {
@@ -25,7 +25,7 @@ export const Title = chakra(Text, {
 
 export const TestimoniesBox = chakra(Box, {
   baseStyle: {
-    marginTop: 8,
+    marginTop: [12, 16, 16],
     marginX: 'auto',
     borderRadius: 10,
     overflow: 'hidden',
@@ -56,7 +56,7 @@ export const MoreButtonBox = chakra(Flex, {
     paddingY: 3,
     borderRadius: 10,
     color: 'text.100',
-    background: 'background.800',
+    background: 'background.900',
     border: '1px solid',
     borderColor: 'background.700',
     alignItems: 'center',

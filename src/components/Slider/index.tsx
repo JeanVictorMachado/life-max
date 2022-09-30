@@ -42,38 +42,40 @@ export const SliderComponent = ({ sliderParams }: SliderComponentProps) => {
   const handlePrev = () => sliderRef.current?.slickPrev()
 
   return (
-    <div className="slider__container">
-      <Slider ref={sliderRef} {...settings}>
-        {sliderParams.map((item, index) => (
-          <>
-            <div key={index}>
-              <p className="slider__pearson-name">{`${item.name} - ${item.age} anos`}</p>
+    <Box paddingX={[4, 4, 0]}>
+      <div className="slider__container">
+        <Slider ref={sliderRef} {...settings}>
+          {sliderParams.map((item, index) => (
+            <>
+              <div key={index}>
+                <p className="slider__pearson-name">{`${item.name} - ${item.age} anos`}</p>
 
-              <div className="slider__img-container">
-                <img src={item.img} alt={item.description} className="slider__img" />
+                <div className="slider__img-container">
+                  <img src={item.img} alt={item.description} className="slider__img" />
 
-                <div className="slider__quantity-weight">
-                  <span>{item.lostWeight}</span>
+                  <div className="slider__quantity-weight">
+                    <span>{item.lostWeight}</span>
+                  </div>
                 </div>
               </div>
-            </div>
-          </>
-        ))}
-      </Slider>
+            </>
+          ))}
+        </Slider>
 
-      <section className="slider__left-icon-box">
-        {position !== 0 && (
-          <Box onClick={handlePrev}>
-            <FaAngleLeft color="rgb(227, 227, 227)" size={30} />
+        <section className="slider__left-icon-box">
+          {position !== 0 && (
+            <Box onClick={handlePrev}>
+              <FaAngleLeft color="rgb(227, 227, 227)" size={30} />
+            </Box>
+          )}
+        </section>
+
+        <section className="slider__right-icon-box">
+          <Box onClick={handleNext}>
+            <FaAngleRight color="rgb(227, 227, 227)" size={30} />
           </Box>
-        )}
-      </section>
-
-      <section className="slider__right-icon-box">
-        <Box onClick={handleNext}>
-          <FaAngleRight color="rgb(227, 227, 227)" size={30} />
-        </Box>
-      </section>
-    </div>
+        </section>
+      </div>
+    </Box>
   )
 }

@@ -26,7 +26,7 @@ export const SalesPage = () => {
   useEffect(() => {
     setTimeout(() => {
       setShowBayButton(true)
-    }, 8000)
+    }, 200000)
   }, [])
 
   return (

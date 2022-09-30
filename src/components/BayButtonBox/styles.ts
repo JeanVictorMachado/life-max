@@ -4,6 +4,7 @@ export const Container = chakra(Box, {
   baseStyle: {
     width: '100%',
     marginTop: 8,
+    paddingX: [6],
   },
 })
 

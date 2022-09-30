@@ -163,13 +163,6 @@ export const Testimonies = () => {
 
   return (
     <S.Container>
-      {!!moreTestimoniesMobile.length && (
-        <S.TitleBox>
-          <S.Title>Comentários</S.Title>
-          <ImArrowDown size={24} color="#C3C3C3" />
-        </S.TitleBox>
-      )}
-
       <S.TestimoniesBox>
         {moreTestimoniesMobile?.map((item, index) => (
           <img key={`testimonies-${index + 1}`} src={item.testimonies} alt="" />

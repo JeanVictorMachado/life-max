@@ -15,7 +15,7 @@ export const Video = ({ vslSrc }: VideoProps) => {
           position: 'absolute',
           width: '100%',
           height: '100%',
-          borderRadius: '10px',
+          borderRadius: '0',
         }}
       />
     </S.Container>

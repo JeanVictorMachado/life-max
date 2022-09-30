@@ -10,7 +10,6 @@ export const Container = chakra(Box, {
 export const Content = chakra(Box, {
   baseStyle: {
     maxWidth: 800,
-    paddingX: 4,
     marginX: 'auto',
   },
 })

@@ -25,7 +25,7 @@ export const SalesPage = () => {
 
   useEffect(() => {
     const oneMinute = 60000
-    const vslPith = 24
+    const vslPith = 1
 
     setTimeout(() => {
       setShowBayButton(true)

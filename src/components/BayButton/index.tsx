@@ -1,5 +1,5 @@
 import { ReactNode } from 'react'
-import { keyframes } from '@chakra-ui/react'
+import { keyframes, Link } from '@chakra-ui/react'
 
 import * as S from './styles'
 
@@ -17,8 +17,10 @@ const animation = `${animationKeyframes} 1.5s ease-in-out infinite`
 
 export const BayButton = ({ children }: BayButtonProps) => {
   return (
-    <S.Container animation={animation}>
-      <S.Content>{children}</S.Content>
-    </S.Container>
+    <Link href="https://pay.kiwify.com.br/OpYrLnf">
+      <S.Container to="" animation={animation}>
+        <S.Content>{children}</S.Content>
+      </S.Container>
+    </Link>
   )
 }

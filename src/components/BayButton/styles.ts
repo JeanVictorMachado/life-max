@@ -1,5 +1,10 @@
+import { Link } from 'react-router-dom'
 import { Box, chakra, Flex } from '@chakra-ui/react'
 import { motion } from 'framer-motion'
+
+export const LinkBox = chakra(Link, {
+  baseStyle: {},
+})
 
 export const Container = chakra(motion(Flex), {
   baseStyle: {

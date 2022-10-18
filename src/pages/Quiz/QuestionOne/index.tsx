@@ -14,7 +14,7 @@ export const QuestionOne = () => {
       debug: false,
     } as Options
 
-    ReactPixel.init('2210584405767877', advancedMatching, options)
+    ReactPixel.init('1184555319147758', advancedMatching, options)
     ReactPixel.revokeConsent()
     ReactPixel.pageView()
   }, [])
